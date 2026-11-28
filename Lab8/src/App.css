@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  background: #1e1e1e;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.form-card {
+  background: white;
+  border: 3px solid #28a745;
+  border-radius: 4px;
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 700px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.field label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.field input,
+.field select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.checkbox-field {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.submit-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto 0;
+}
+
+.submit-btn:hover {
+  background: #218838;
+}
+
+.result {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.result h3 {
+  margin-top: 0;
+}
+
+.result p {
+  margin: 6px 0;
+}
