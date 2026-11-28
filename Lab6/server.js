@@ -4,7 +4,7 @@ const noteRoutes = require('./routes/NoteRoutes');
 
 
 // Example: mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/notesdb?retryWrites=true&w=majority
-const DB_URL = process.env.DB_URL || "mongodb://howlader101_db_user:Mango123@ac-ha4ckky-shard-00-00.5h6bnnv.mongodb.net:27017,ac-ha4ckky-shard-00-01.5h6bnnv.mongodb.net:27017,ac-ha4ckky-shard-00-02.5h6bnnv.mongodb.net:27017/notesdb?ssl=true&replicaSet=atlas-4wko9k-shard-0&authSource=admin&retryWrites=true&w=majority";
+const DB_URL = process.env.DB_URL || "mongodb://howlader101_db_user:<password>@ac-ha4ckky-shard-00-00.5h6bnnv.mongodb.net:27017,ac-ha4ckky-shard-00-01.5h6bnnv.mongodb.net:27017,ac-ha4ckky-shard-00-02.5h6bnnv.mongodb.net:27017/notesdb?ssl=true&replicaSet=atlas-4wko9k-shard-0&authSource=admin&retryWrites=true&w=majority";
 const PORT = process.env.PORT || 8081;
 
 const app = express();
