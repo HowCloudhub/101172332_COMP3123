@@ -1,0 +1,95 @@
+{
+  "info": {
+    "name": "COMP3123 exec05 API Checks",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Home page",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8081/home"
+      }
+    },
+    {
+      "name": "User profile",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8081/api/v1/user/profile"
+      }
+    },
+    {
+      "name": "Valid login",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:8081/api/v1/user/login",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"bret\",\n  \"password\": \"bret@123\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Invalid username",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:8081/api/v1/user/login",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"wrong\",\n  \"password\": \"bret@123\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Invalid password",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:8081/api/v1/user/login",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"bret\",\n  \"password\": \"wrong\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Logout",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8081/api/v1/user/logout/bret"
+      }
+    }
+  ]
+}
